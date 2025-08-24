@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Alex Codewell">
+  <meta name="description" content="A comprehensive blog post tracing the evolution of web development, highlighting key milestones, technologies, and best practices — all while showcasing a fully structured semantic HTML layout with lists, tables, forms, quotes, and more.">
+  <link rel="icon" href="favicon.png" type="image/png"> 
+  <link rel="stylesheet" href="global.css"> 
+  <link rel="stylesheet" href="style.css"> 
+  <title>The Rise of Web Development</title>
+</head>
+
+<body class="ligaht">
+  <header>
+    <h1 class="midwrapper">The Rise of Web Development <br> <small>From Static to Dynamic</small> </h1>
+    <div class="wrapper">
+      <p>Published on: July 5, 2025 | Author: Alex Codewell</p>
+      <button onclick="document.body.classList.toggle('light')">Switch Mode</button>
+    </div>  
+
+  </header>
+
+  <main>
+  <section>
+    <h2 class="midwrapper">Introduction</h2>
+    <div class="wrapper">
+      <p style="text-align: justify;">Web development has come a long way since the early days of the internet. Back then, websites were little more than static pages displaying basic text and images. Fast-forward to 2025, and we now build complex applications in the browser, powered by JavaScript, APIs, and frameworks. But it all still starts with one thing: <strong>HTML</strong>.</p>
+    </div>
+  </section>
+  <hr>
+
+  <section class="milestones clearfix">
+    <div class="wrapper">
+      <img id="top" src="milestones.png" alt="Timeline graphic of web milestones" width="350px">
+    </div>
+
+    <h2 class="midwrapper">Key Milestones in Web Evolution</h2>
+    <div class="wrapper">
+      <ol>
+        <li><time datetime="1991">1991</time> – HTML is born, invented by Tim Berners-Lee.</li>
+        <li><time datetime="1995">1995</time> – JavaScript adds interactivity.</li>
+        <li><time datetime="1998">1998</time> – CSS becomes standardized.</li>
+        <li><time datetime="2008">2008</time> – Chrome launches, pushing web forward.</li>
+        <li><time datetime="2015">2015</time> – ES6 reshapes JavaScript syntax.</li>
+        <li><time datetime="2023">2023</time> – WebAssembly gains traction.</li>
+        <li><time datetime="2025">2025</time> – HTML6 discussions begin.</li>
+      </ol>
+
+      <div class="scrollwrapper">
+        <img id="bottom" src="milestones.png" alt="Timeline graphic of web milestones" width="400px">
+      </div>
+
+    </div>
+  </section>
+  
+  <section class="toolstable">
+    <h2 class="midwrapper">Popular Technologies Today</h2>
+    <div class="wrapper">
+      <p>Here’s a comparison of common front-end tools:</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxSTKEgwpFfAafk8-5GPClqpTsIE-yPZKnuQ&s" alt="icons of HTML, CSS, JS, etc.">
+
+      <table>
+        <caption>Comparison of Common Front-End Tools</caption>
+  
+        <thead>
+          <tr>
+            <th scope="col">Technology</th>
+            <th scope="col">Purpose</th>
+            <th scope="col">Example Projects</th>
+          </tr>
+        </thead>
+  
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Structure</td>
+            <td>Blogs, documentation</td>
+          </tr>
+  
+          <tr>
+            <td>CSS</td>
+            <td>Styling</td>
+            <td>Portfolios, landing pages</td>
+          </tr>
+  
+          <tr>
+            <td>JavaScript</td>
+            <td>Interactivity</td>
+            <td>Games, calculators</td>
+          </tr>
+  
+          <tr>
+            <td>React</td>
+            <td>UI Components</td>
+            <td>Dashboards, SPAs</td>
+          </tr>
+  
+          <tr>
+            <td>Node.js</td>
+            <td>Backend with JavaScript</td>
+            <td>APIs, server-side rendering</td>
+          </tr>
+        </tbody>
+  
+      </table>
+  
+
+    </div>
+  </section>
+  <hr>
+
+  
+  <article class="devtoknow">
+    <h2 class="midwrapper">Things Every Developer Should Know</h2>
+    <div class="wrapper">
+      <div>
+        <h3>Basic Knowledge Checklist</h3>
+        <ul>
+          <li>Understanding of semantic tags</li>
+          <li>Ability to create and structure forms</li>
+          <li>Inserting and managing media (images, audio, video)</li>
+          <li>Creating accessible and navigable content</li>
+          <li>Use of metadata for SEO and sharing</li>
+        </ul>
+      </div>
+      
+      <div>
+        <h3>Example HTML Elements to Practice</h3>
+        <ul>
+          <li>Headings from h1 to h6</li>
+          <li>Ordered and unordered lists</li>
+          <li>Description lists</li>
+          <li>Anchor tags</li>
+          <li>Tables and captions</li>
+          <li>Images with alt text</li>
+          <li>Blockquotes and inline quotes</li>
+          <li>Forms with inputs, checkboxes, radio buttons</li>
+          <li><code>&lt;abbr&gt;</code>, <code>&lt;code&gt;</code>, <code>&lt;time&gt;</code>, <code>&lt;mark&gt;</code>, etc.</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+  <hr>
+
+  <section class="funfact">
+    <h2 class="midwrapper">Fun Fact</h2>
+    <p class="wrapper">The first website is still online! You can visit it here: <a href="https://info.cern.ch">https://info.cern.ch</a></p>
+  </section>
+  <hr>
+
+  <section class="contact">
+    <h2 class="midwrapper">Contact the Author</h2>
+
+    <div class="wrapper">
+      <p>Want to share your thoughts or ask questions? Fill out the form below:</p>
+      <img src="internet.png" alt="internconnecte earth" width="200px">
+      <form>
+        <div class="form-group" id="Cname-group">
+          <label for="Cname">Name</label>
+          <input id="Cname" type="text" name="Cname">
+        </div>
+          
+        <div class="form-group" id="Cemail-group">
+          <label for="Cemail">Email</label>
+          <input id="Cemail" type="email" name="Cemail">
+        </div>
+
+        <div class="form-group" id="Cmessage-group">
+          <label for="Cmessage">Your message</label>
+          <textarea id="Cmessage" name="Cmessage"></textarea>
+        </div>
+
+        <div class="form-group" id="Cnewslettersign-group">
+          <input id="Cnewslettersign" type="checkbox" name="Cnewslettersign">
+          <label for="Cnewslettersign">Newsletter Signup</label>
+        </div>
+        
+        <div class="form-group" id="Cmethod-group">
+          <p>Preferred contact method</p>
+          
+          <input id="CMphone" type="radio" name="Cmethod" value="phone">
+          <label for="CMphone">Phone</label>
+          
+          <input id="CMemail" type="radio" name="Cmethod" value="email">
+          <label for="CMemail">Email</label>
+        </div>
+
+        <div class="form-group" id="Csubmit-group">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </section>
+  <hr>
+  </main>
+
+  <footer>
+    <h2 class="midwrapper">Conclusion</h2>
+    <div class="wrapper">
+
+      <p>HTML is more than just tags. It's the foundation of the web. Mastering it means mastering the ability to structure digital information in a meaningful, accessible, and scalable way.</p>
+      <p>Let’s not forget: before the styles and the scripts come into play, it’s the semantic structure that gives content meaning.</p>
+    </div>
+  </footer>
+</body>
+</html>

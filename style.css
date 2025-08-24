@@ -1,0 +1,319 @@
+body {
+  background-color: var(--bg);
+  margin-block: 1rem;
+}
+
+header > h1 {
+  line-height: 0.8;
+  padding-block: 1rem;
+}
+
+header > h1 > small {
+  font-size: var(--fs-2);
+}
+
+header button {
+  padding-block: 0.25rem;
+  padding-inline: 0.75rem;
+  margin-top: 0.5rem;
+  background: var(--secondary);
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-muted);
+  transition: 0.2s background-color, 0.2s color;
+  cursor: pointer;
+}
+
+header button:hover {
+  background: var(--primary);
+  color: var(--bg-light);
+}
+
+
+
+/* First section */
+
+
+.milestones img {
+  border-radius: 1rem;
+  border: 1px solid var(--text-muted);
+}
+
+.milestones img#top {
+  float: right;
+  width: 700px;
+}
+
+.milestones img#bottom {
+  margin-inline: auto;
+  width: clamp(700px, 100%, 900px);
+  
+  display: none;
+  border: none;
+}
+
+.milestones .scrollwrapper {
+  margin-top: 2rem;
+  overflow-x: auto;
+  border-radius: 1rem;
+  background-color: var(--bg-light);
+}
+
+body:not(.light) .milestones .scrollwrapper {
+  background-color: black;
+}
+
+.milestones li {
+  list-style-type: none;
+}
+
+
+body:not(.light) .milestones img {
+  filter: invert(1);
+}
+
+@media screen and (max-width: 1150px) {
+  .milestones img#top {
+    display: none;
+  }
+  .milestones img#bottom {
+    display: block;
+  }
+
+  .scrollwrapper {
+    border: 1px solid var(--border-muted);
+  }
+
+  h1 {
+    font-size: var(--fs-3);
+  }
+}
+
+
+/* Second section */
+
+
+.toolstable table {
+  border: 1px solid var(--border-muted);
+  border-collapse: collapse;
+  color: var(--text);
+  font-size: var(--fs-1);
+  margin-left: auto;
+  width: 65%;
+  margin-top: 1rem;
+  box-shadow: 5px 5px 20px rgba(42, 42, 42, 0.1), 1px 1px 5px rgba(42, 42, 42, 0.3);;
+}
+
+.toolstable th, .toolstable td {
+  text-align: left;
+  padding: 0.5rem;
+  color: var(--text-muted);
+}
+
+.toolstable th {
+  background-color: var(--primary);
+  color: var(--bg-light);
+}
+
+.toolstable tr:nth-child(2n) {
+  background-color: var(--secondary);
+}
+
+.toolstable img {
+  float: left;
+  margin-top: 3rem;
+}
+
+body:not(.light) .toolstable tr:nth-child(2n) td {
+  color: var(--bg-light);
+}
+
+body:not(.light) .toolstable img {
+  filter: invert(1);
+}
+
+@media screen and (max-width: 1150px) {
+  .toolstable img {
+    display: none;
+  }
+
+  .toolstable table {
+    margin-inline: auto;
+    width: 100%;
+  }
+}
+
+
+/* Third section */
+
+
+.devtoknow > div {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-block: 2rem;
+}
+
+.devtoknow > div > div > ul {
+  padding-left: 1rem;
+}
+
+
+
+.devtoknow > div > div:last-child > ul {
+  columns: 2;
+}
+
+.devtoknow > div > div:last-child > h3 {
+  text-align: center;
+}
+
+
+@media screen and (max-width: 900px) {
+  .devtoknow > div {
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 100%;
+  }
+
+  .devtoknow > div > div {
+    width: 100%;
+  }
+
+  .devtoknow > div > div:last-child > ul {
+    columns: 1;
+  }
+
+  .devtoknow > div > div:last-child > h3 {
+    text-align: left;
+  }
+}
+
+
+/* Forth section */
+
+.funfact {
+  background-color: var(--primary);
+  padding-block: 1rem;
+}
+
+.funfact p, .funfact h2 {
+  color: var(--bg);
+}
+
+
+/* Fifth section */
+
+.contact img {
+  float: right;
+}
+
+.contact form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 475px;
+}
+
+.form-group {
+  width: 50%;
+  margin-top: 0.5rem;
+}
+
+.form-group > label {
+  color: var(--text-muted);
+}
+
+#Cmessage-group > label, #Cname-group > label, #Cemail-group > label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+#Cmessage-group {
+  width: 100%;
+}
+
+#Cnewslettersign-group {
+  width: 100%;
+  margin-bottom: 0.25rem;
+  
+}
+
+#Cmethod-group > p {
+  margin-bottom: 0.25rem;
+}
+
+#Cmethod-group > #CMemail {
+  margin-left: 0.25rem;
+}
+
+#Cemail-group > input, #Cname-group > input, #Cmessage-group > textarea {
+  width: 98%;
+  padding: 0.25rem;
+  background-color: transparent;
+  border: 1px solid var(--border-muted);
+  border-radius: 0.5rem;
+  transition: 0.2s border;
+  color: var(--text);
+}
+
+#Cmessage-group > textarea {
+  width: 99%;
+  resize: none;
+  height: 100px;
+}
+
+#Csubmit-group {
+  margin-left: auto;
+  width: fit-content;
+}
+
+#Csubmit-group > input {
+  padding-block: 0.25rem;
+  padding-inline: 0.75rem;
+  margin-right: 0.25rem;  /* Align button with textarea and inputs */
+  background: var(--secondary);
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-muted);
+  transition: 0.2s background-color, 0.2s color;
+  cursor: pointer;
+}
+
+#Csubmit-group > input:hover {
+  background: var(--primary);
+  color: var(--bg-light);
+}
+
+
+
+#Cemail-group > input:focus, #Cname-group > input:focus, #Cmessage-group > textarea:focus {
+  outline: none;
+  border: 1px solid var(--text-muted);
+}
+
+@media screen and (max-width: 800px) {
+  .contact form > .form-group {
+    width: 100%;
+  }
+  .contact form > #Cmethod-group {
+    width: fit-content;
+  }
+
+  #Cemail-group > input, #Cname-group > input, #Cmessage-group > textarea {
+    width: 99%;
+  }
+
+  .contact form {
+    width: 60%;
+  }
+  .contact img {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .contact img {
+    display: none;
+  }
+    .contact form {
+    width: 100%;
+  }
+}

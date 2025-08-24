@@ -1,0 +1,129 @@
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.25,2560,24,1.414,3,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  --fs-0: clamp(0.72rem, 0.7157rem + 0.0216vw, 0.7502rem);
+  --fs-1: clamp(0.9rem, 0.877rem + 0.1149vw, 1.0608rem);
+  --fs-2: clamp(1.125rem, 1.0714rem + 0.2679vw, 1.5rem);
+  --fs-3: clamp(1.4063rem, 1.3041rem + 0.5105vw, 2.121rem);
+  --fs-4: clamp(1.7578rem, 1.5805rem + 0.8866vw, 2.9991rem);
+  --fs-5: clamp(2.1973rem, 1.9053rem + 1.4596vw, 4.2407rem);
+
+  --bg-dark: hsl(336 0% 1%);
+  --bg: hsl(300 0% 4%);
+  --bg-light: hsl(0 0% 9%);
+  --text: hsl(300 0% 95%);
+  --text-muted: hsl(300 0% 80%);
+  --highlight: hsl(330 0% 39%);
+  --border: hsl(0 0% 28%);
+  --border-muted: hsl(300 0% 25%);
+  --primary: hsl(210, 66%, 55%);
+  --secondary: hsl(32 61% 63%);
+
+  --danger: hsl(9 26% 64%);
+  --warning: hsl(52 19% 57%);
+  --success: hsl(146 17% 59%);
+  --info: hsl(217 28% 65%);
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.light {
+  --bg-dark: hsl(0 0% 90%);
+  --bg: hsl(330 10% 97%);
+  --bg-light: hsl(300 50% 100%);
+  --text: hsl(300 0% 4%);
+  --text-muted: hsl(0 0% 20%);
+  --highlight: hsl(300 50% 100%);
+  --border: hsl(0% 0% 50%);
+  --border-muted: hsl(340 0% 60%);
+  --primary: hsl(208 74% 40%);
+  --secondary: hsl(38, 100%, 70%);
+
+  --danger: hsl(9 21% 41%);
+  --warning: hsl(52 23% 34%);
+  --success: hsl(147 19% 36%);
+  --info: hsl(217 22% 41%);
+}
+
+button, input, textarea {
+  font: inherit;
+  color: inherit;
+}
+
+img, video {
+  display: block;
+}
+
+
+p {
+  font-size: var(--fs-1);
+  color: var(--text-muted);
+}
+
+h2 {
+  font-size: var(--fs-2);
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+h3 {
+  font-size: var(--fs-1);
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+li {
+  font-size: var(--fs-1);
+  color: var(--text-muted);
+}
+
+section {
+  margin-block: 0.5rem;
+}
+
+h1 {
+  font-size: var(--fs-4);
+  color: var(--text);
+}
+
+.wrapper, .midwrapper {
+  max-width: 1400px;
+  margin-inline: auto;
+}
+
+.wrapper {
+  padding-inline: 3.5rem;
+}
+
+.midwrapper {
+  padding-inline: 2.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper, .midwrapper {
+    padding-inline: 1.2rem;
+  }
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+hr {
+  border: none;
+}
+
+a {
+  color: var(--bg);
+}
+a:visited {
+  color: var(--bg-light);
+}
